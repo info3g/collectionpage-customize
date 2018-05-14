@@ -35,7 +35,7 @@ div#collection_container tbody tr td img {
 }
 div#collection_container tbody tr td input.collectionSave {
     text-align: center;
-    width: 50%;
+    width: 100%;
     padding: 12px 0px;
     border-radius: 10px;
     font-size: 14px;
