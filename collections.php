@@ -24,7 +24,7 @@ try
 			$colId = $Allcollections["id"];
 			echo '<tr>';
 			echo '<td>'.$img.'<p class="col-title">'.$Allcollections['title'].'</p></td>';
-			echo '<td>'.'<textarea class="form-control rich_content" id="col-metafield2_'.$colId.'" name="lowerData[]"></textarea>'.'</td>';
+			echo '<td>'.'<textarea class="form-control" id="col-metafield2_'.$colId.'" name="lowerData[]"></textarea>'.'</td>';
 			echo '<td>'.'<input type="button" class="collectionSave" value="Save" name="addColData" data-id="'.$colId.'"></td>';
 			echo '</tr>';
 
@@ -40,7 +40,7 @@ try
 			$colId = $smartcollections["id"];
 			echo '<tr>';
 			echo '<td>'.$img.'<p class="col-title">'.$smartcollections['title'].'</p></td>';
-			echo '<td>'.'<textarea class="form-control rich_content" id="col-metafield2_'.$colId.'" name="lowerData[]"></textarea>'.'</td>';
+			echo '<td>'.'<textarea class="form-control" id="col-metafield2_'.$colId.'" name="lowerData[]"></textarea>'.'</td>';
 			echo '<td>'.'<input type="button" class="collectionSave" value="Save" name="addColData" data-id="'.$colId.'"></td>';
 			echo '</tr>';
 		}
