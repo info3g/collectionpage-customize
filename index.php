@@ -58,6 +58,7 @@ function fetchColmetafield(access_token,shop){
 		success: function(response){
 		   if($.trim(response)) {
 		    _this.find('textarea').val(response);
+		    _this.find('textarea').richText(response);
 		   }
 		}
 	   });
@@ -77,7 +78,6 @@ $(document).ready(function(){
 		complete: function() {
 		  fetchColmetafield(access_token,shop);
 		  editColTemplate(access_token,shop);
-           	  $('.rich_content').richText();
 		}
 	});
 
