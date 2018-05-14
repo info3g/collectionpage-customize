@@ -17,12 +17,14 @@ if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])) && $_REQUEST['shop']
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  rel="stylesheet" type="text/css"/>  
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/richtext.min.css" rel="stylesheet" type="text/css" />
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/988a7dc35f.js"></script>
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  rel="stylesheet" type="text/css"/>  
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery.richtext.min.js"></script>
 </head>
 <body>
 <div class="logo">
@@ -75,6 +77,7 @@ $(document).ready(function(){
 		complete: function() {
 		  fetchColmetafield(access_token,shop);
 		  editColTemplate(access_token,shop);
+           	  $('.rich_content').richText();
 		}
 	});
 
