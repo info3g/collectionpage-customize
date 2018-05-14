@@ -68,5 +68,5 @@ div#collection_container thead {
     background: #2a843e;
 }
 .richText .richText-undo, .richText .richText-redo, .richText .richText-help {
-    display: none;
+    display: none !important;
 }
