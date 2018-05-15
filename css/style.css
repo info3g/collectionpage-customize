@@ -1,9 +1,11 @@
-
 th, td {
        padding: 0 5px 0 5px;
 }
+.logo {
+	text-align: center;
+}
 img {
-    width: 100px;
+    width: 250px;
 }
 h1.title {
     text-align: center;
