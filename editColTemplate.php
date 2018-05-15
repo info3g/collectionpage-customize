@@ -13,7 +13,8 @@ try
 		$themeId = $theme['id'];
 		$collectionTemplate = $shopify("GET /admin/themes/$themeId/assets.json?asset[key]=templates/collection.liquid&theme_id=$themeId");
 			if (strpos($collectionTemplate['value'], '{{ collection.metafields.collectionlower.lowerdata }}') === false) {
-				$colMeta = $collectionTemplate['value'].'{{ collection.metafields.collectionlower.lowerdata }}';
+				//$colMeta = $collectionTemplate['value'].'{{ collection.metafields.collectionlower.lowerdata }}';
+				$colMeta = $collectionTemplate['value'].'<div class="col_lower_main" style="width:100%"><div class="inner_lower_main" style="max-width:1170px;margin:0 auto;">{{ collection.metafields.collectionlower.lowerdata }}</div></div>'; 
 				$fields = array( "asset" => array('key' => 'templates/collection.liquid', 'value' => $colMeta));
 				$jsonfields = json_encode($fields);
 				//$modifyColTemplate = $shopify("PUT /admin/themes/$themeId/assets.json");
